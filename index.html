@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="google-signin-client_id" content="552041877839-pk5fp16btvvnsfh2opddfdm7rf7ducu5.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Profile-app</title>
+
+    <style>
+        .g-signin2 {
+            margin-left: 500px;
+            margin-top: 200px;
+        }
+
+        .data {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div class="data">
+            <h1>Profile Details</h1>
+            <img id="pic" class="img-circle" width="100" height="100"/>
+            <p>Email Address</p>
+            <p id="email" class="alert alert-danger"></p>
+            <button onclick="signOut()" class="btn btn-danger">SignOut</button>
+        </div>
+</body>
+</html>
