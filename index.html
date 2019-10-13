@@ -11,8 +11,6 @@
         content="552041877839-pk5fp16btvvnsfh2opddfdm7rf7ducu5.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script> -->
-    <script src="script.js"></script>
     <title>Profile-app</title>
 </head>
 
@@ -25,18 +23,38 @@
         <p id="email" class="alert alert-danger"></p>
         <button onclick="signOut()" class="btn btn-danger">SignOut</button>
 
-        <p>Codewars Completed Challenges</p>
+        <h1>Github Details</h1>
+        <input type="text" id="search" placeholder="enter a username">
+
+        <button class="btn btn-success searchBtn">Search</button>
+        <p class="profile-name">
+
+        </p>
+
+        <p class="main-profile-name">
+
+        </p>
+
+        <p class="profile-repos">
+
+        </p>
+
+        <p class="profile-url">
+
+        </p>
 
         <h1>Contact me</h1>
 
         <form id="contactform" action="//formspree.io/lihlemenz@gmail.com" method="POST">
-           Name: <input type="text" name="name" class="email" placeholder="Your name">
-           Email: <input type="email" name="_replyto" class="subject" placeholder="Your email">
-           Message: <textarea name="message" class="message" placeholder="Your message"></textarea>
+            Name: <input type="text" name="name" class="email" placeholder="Your name" required>
+            Email: <input type="email" name="_replyto" class="subject" placeholder="Your email" required>
+            Message: <textarea name="message" class="message" placeholder="Your message" required></textarea>
             <input type="submit" value="Send">
         </form>
 
     </div>
+    <script src="script.js"></script>
+    <script src="axios.js"></script>
 </body>
 
 </html>
